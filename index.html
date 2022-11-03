@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Music player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <div class="player">
+          <i class="record fab fa-soundcloud"></i>
+          <h2 id="title">Song Name</h2>
+          <div class="slideContainer">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="0" max="100" value="50" class="slider" />
+            <i class="fa fa-volume-up"></i>
+          </div>
+          <div class="controller">
+            <button class="previous" id="previous">
+              <i class="fa fa-step-backward"></i>
+            </button>
+            <button class="play-pause" id="play-pause">
+              <i class="fa fa-play"></i>
+            </button>
+            <button class="next" id="next">
+              <i class="fa fa-step-forward"></i>
+            </button>
+          </div>
+        </div>
+        <div class="playlist">
+          <h2>Playlist</h2>
+          <ul class="song-list">
+            <li
+              data-src="./Music/Hayd - Head In The Clouds (Official Video).mp3"
+              data-index="0"
+              data-name = "Hayd - Head In The Clouds (Official Video)"
+            >
+              <span>Hayd - Head In The Clouds (Official Video)</span>
+            </li>
+            <li
+              data-src="./Music/Bài này không để đi diễn - Anh Tu Atus x @Diệu Nhi Official 🎬 Wedding.mp3"
+              data-index="1"
+              data-name = "Bài này không để đi diễn - Anh Tu Atus x @Diệu Nhi"
+            >
+              <span>Bài này không để đi diễn - Anh Tu Atus x @Diệu Nhi</span>
+            </li>
+          <li
+              data-src="./Music/XHTDRLX2 - Đôi Bờ - Trúc Nhân live tại Xuân Hạ Thu Đông, rồi lại Xuân mùa 2.mp3"
+              data-index="2"
+              data-name = "Đôi Bờ - Trúc Nhân live tại Xuân Hạ Thu Đông"
+            >
+              <span>Đôi Bờ - Trúc Nhân live tại Xuân Hạ Thu Đông</span>
+            </li>
+            <li
+              data-src="./Music/Xuân Thì - @Phan Mạnh Quỳnh Official live at #souloftheforest.mp3"
+              data-index="3"
+              data-name = "Xuân Thì - @Phan Mạnh Quỳnh Official"
+            >
+              <span>Xuân Thì - @Phan Mạnh Quỳnh Official</span>
+            </li>
+            <li
+              data-src="./Music/MẶT MỘC - Phạm Nguyên Ngọc x VAnh x Ân Nhi (Original).mp3"
+              data-index="4"
+              data-name = "MẶT MỘC - Phạm Nguyên Ngọc x VAnh x Ân Nhi"
+            >
+              <span>MẶT MỘC - Phạm Nguyên Ngọc x VAnh x Ân Nhi</span>
+            </li>
+          </ul>
+          <audio src="" id="audio"></audio>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
