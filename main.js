@@ -85,7 +85,7 @@ songList.addEventListener("click", (e) => {
     loadAudio();
     playAudio();
 },false)
-songList.addEventListener("ended",()=>{
+audio.addEventListener("ended",()=>{
     nextSong();
 })
 volSlider.addEventListener("input", ()=>{

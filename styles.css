@@ -33,13 +33,11 @@ body{
     border-top-left-radius: 5px;
 }
 .record{
-    font-size: 60px;
+    width: 150px;
     padding: 10px;
-    background-color: beige;
-    color: red;
     border-radius: 50%;
     position: absolute;
-    top: -50px;
+    top: -75px;
 }
 .record-animation{
     animation-name: spin;
